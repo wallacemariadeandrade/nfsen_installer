@@ -31,8 +31,8 @@ apt install -y unzip make gcc flex rrdtool librrd-dev libpcap-dev php librrds-pe
 git clone https://github.com/phaag/nfdump.git
 git clone https://github.com/phaag/nfsen.git
 
-a2enmod php7.4
-sed -i "s/;date.timezone =/date.timezone=America\/Sao_Paulo /g" /etc/php/7.4/apache2/php.ini
+a2enmod php8.2
+sed -i "s/;date.timezone =/date.timezone=America\/Sao_Paulo /g" /etc/php/8.2/apache2/php.ini
 sed -i 's/Alias \/icons\/ "\/usr\/share\/apache2\/icons\/"/#Alias \/icons\/ "\/usr\/share\/apache2\/icons\/"/g' /etc/apache2/mods-enabled/alias.conf
 
 cd nfdump
