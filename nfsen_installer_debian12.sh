@@ -26,13 +26,13 @@ apt update -y && apt upgrade -y
 
 mkdir ~/nfsen && cd ~/nfsen
 
-apt install -y unzip make gcc flex rrdtool librrd-dev libpcap-dev php librrds-perl libsocket6-perl apache2 libapache2-mod-php libtool dh-autoreconf pkg-config libbz2-dev byacc doxygen graphviz librrdp-perl libmailtools-perl build-essential autoconf curl whois
+apt install -y curl wget unzip man-db tcpdump htop tree dialog git build-essential autoconf pkg-config flex byacc bison php php-dev apache2 libapache2-mod-php autogen libtool librrd-dev libbz2-dev libpcap-dev rrdtool libcurl4-openssl-dev librrds-perl libsocket6-perl librrdp-perl libio-socket-inet6-perl libmailtools-perl libnet-telnet-perl libnet-whois-ip-perl libnet-snmp-perl libio-socket-ssl-perl libgd-perl git whois
 
 git clone https://github.com/phaag/nfdump.git
 git clone https://github.com/phaag/nfsen.git
 
-a2enmod php7.4
-sed -i "s/;date.timezone =/date.timezone=America\/Sao_Paulo /g" /etc/php/7.4/apache2/php.ini
+a2enmod php8.2
+sed -i "s/;date.timezone =/date.timezone=America\/Sao_Paulo /g" /etc/php/8.2/apache2/php.ini
 sed -i 's/Alias \/icons\/ "\/usr\/share\/apache2\/icons\/"/#Alias \/icons\/ "\/usr\/share\/apache2\/icons\/"/g' /etc/apache2/mods-enabled/alias.conf
 
 cd nfdump
