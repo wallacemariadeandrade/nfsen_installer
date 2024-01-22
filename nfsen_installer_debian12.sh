@@ -10,13 +10,13 @@ CONTACT_EMAIL="noc@hexanetworks.com.br"
 
 if [ "$SERVER_IP" = "" ]
  then
-  echo "Abra o script e configure o IP do server!"
+  echo "Please configure server address inside this script!"
   exit 0
 fi
 
 if [ "$CONTACT_EMAIL" = "" ] 
  then
-  echo "Abra o script e configure o email de contato!"
+  echo "Please configure contact email inside this script!"
   exit 0
 fi
 
