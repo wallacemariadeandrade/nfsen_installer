@@ -3,8 +3,8 @@
 # $1 = SERVER IP
 # $2 = CONTACT EMAIL
 
-SERVER_IP=""
-CONTACT_EMAIL=""
+SERVER_IP="0.0.0.0"
+CONTACT_EMAIL="noc@hexanetworks.com.br"
 
 ################## VALIDACAO ######################
 
